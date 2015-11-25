@@ -8,9 +8,9 @@
 declare module "oembed" {
   import request = require("superagent");
 
-  module oembedStatic {
-    type CallbackHandler = { (err: any, res: request.Response): void; }|{ (res: request.Response): void; };
+  type CallbackHandler = { (err: any, res: request.Response): void; }|{ (res: request.Response): void; };
 
+  export module oembed {
     function fetch(url:string, parameters:IOembedOptions, cb:CallbackHandler):void;
 
     function discover(url:string, cb:CallbackHandler):void;
@@ -27,6 +27,4 @@ declare module "oembed" {
       format?: string;
     }
   }
-
-  export = oembedStatic;
 }
