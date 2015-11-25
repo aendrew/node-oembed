@@ -19,7 +19,8 @@
   "keywords": [
     "oembed"
   ],
-  "main": "lib/oembed.js",
+  "main": "./lib/oembed.js",
+  "typings": "./lib/oembed.d.ts",
   "bin": {
     "oembed_diff_json_xml": "./bin/oembed_diff_json_xml.js",
     "oembed_get": "./bin/oembed_get.js",
